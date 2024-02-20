@@ -1,0 +1,462 @@
+/* #3498db */
+/* #2676ac */
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar div {
+  margin: 0px 100px;
+}
+
+.logo {
+  color: #3498db;
+  font-size: 30px;
+  padding-right: 10px; /* Adjust as needed */
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 auto; /* Center the search bar */
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding-left: 10px;
+  background-color: #dfdfdf;
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  background-color: #dfdfdf;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 10px; /* Adjust as needed */
+  color: black;
+}
+
+.search-icon {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.mode-switcher {
+  display: flex;
+  align-items: center;
+  padding-left: 10px; /* Adjust as needed */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3498db;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.Layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0px 100px;
+}
+
+.Layout section {
+  margin: 10px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.sec3 {
+  background-color: #dfdfdf;
+}
+
+.sec1 {
+  background-color: #dfdfdf;
+  display: block;
+}
+
+.sec1 h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+.sec1 nav {
+  margin: 20px 20px 0 20px;
+}
+
+.button {
+  width: 100%;
+}
+
+.button button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 550;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+  background-color: #dfdfdf;
+  border: 0;
+  border-radius: 0 0 8px 8px;
+  height: 40px;
+  border-top: 4px solid #ffffff;
+  transition: 0.3s;
+}
+
+.button button:hover {
+  background-color: #3498db;
+}
+
+.button button a {
+  font-display: none;
+  color: dimgray;
+  text-decoration-line: none;
+  transition: 0.3s;
+}
+
+.button button a:hover {
+  color: white;
+}
+
+.logo-container {
+  width: 100%;
+}
+
+.sec1-logo {
+  background-color: white;
+  /* Placeholder for the profile picture */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+
+.sec1 nav ul {
+  list-style: none;
+}
+
+.sec1 nav a {
+  color: dimgray;
+  text-decoration: none;
+  display: block;
+  padding: 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.sec1 nav a:hover {
+  color: rgb(255, 255, 255);
+  background-color: #3498db;
+}
+
+.sec2 {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-creation {
+  background-color: #dfdfdf;
+  width: 95%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post-creation {
+  display: block;
+}
+
+.post-creation .btn-emoji {
+  border: 0;
+  background-color: transparent;
+  width: 40px;
+  height: 20px;
+  transform: translate(0, -100%);
+  margin: 0;
+}
+
+.post-creation textarea {
+  background-color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 120px;
+}
+
+.btn-publish {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  transition: 0.3s;
+}
+
+.btn-publish:hover {
+  background-color: #3498db;
+}
+
+.post1 {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: #dfdfdf;
+  width: 95%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.post1-logo {
+  background-color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.post1-content {
+  margin-left: 10px;
+}
+
+.post1-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.post1 h4,
+.post1 h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.post1 h6 {
+  margin-left: 5px;
+  color: #657786; /* Twitter username color */
+}
+
+.post1-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.post1-footer .icon {
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sidebar-suggestions {
+  width: 300px;
+  padding: 20px;
+  height: 80%;
+  border-radius: 8px;
+}
+
+.suggestions h3 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.suggestion {
+  background-color: #c9c9c9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+  align-items: center;
+}
+
+.suggestion-profile-pic {
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.suggestion-content {
+  flex: 1;
+}
+
+.suggestion-content p {
+  color: #8899a6;
+  margin: 5px 0;
+}
+
+.profile-pic,
+.suggestion-profile-pic,
+.post-profile-pic {
+  background-image: url('../images/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dark-mode {
+  background-color: #222;
+  transition: 0.3s;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.dark-mode .search-bar{
+  background-color: #222;
+  transition: 0.3s;
+}
+
+.dark-mode .search-input {
+  background-color: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.dark-mode .sec1, .dark-mode .sec3 {
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.dark-mode .button button {
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.dark-mode .button button:hover {
+  background-color: #3498db;
+  transition: 0.3s;
+} 
+
+.dark-mode .button button a {
+  color: dimgray;
+  transition: 0.3s;
+}
+
+.dark-mode .button button a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.dark-mode .post1,
+.dark-mode .post-creation {
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+}
+
+.dark-mode .post-creation textarea {
+  background-color: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.dark-mode .suggestions h3{
+  color: white;
+  transition: 0.3s;
+}
+
+.dark-mode .suggestion {
+  background-color: #222;
+  transition: 0.3s;
+}
+
+.dark-mode .suggestion strong {
+  color: white;
+  transition: 0.3s;
+} 
+
+.dark-mode .suggestion p {
+  color: dimgray;
+}
+/* #4CAF50 */
+
+/* dark #28662a */

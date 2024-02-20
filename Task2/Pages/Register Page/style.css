@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.logo a {
+    font-size: 2em;
+    font-weight: 1000;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.nav-text a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.text h1 {
+    font-size: 2em;
+}
+
+.text p {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* horizontal line */
+.ParentLine {
+    margin-top: 50px;
+}
+
+.line {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.line span {
+    background-color: #dfdfdf;
+    padding: 0 10px;
+}
+
+/* horizontal line */
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.Links {
+    margin: 40px;
+}
+
+.Links a {
+    margin: 0px 5px;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.Links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #3498db;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Inputs input {
+    width: 93%;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.submit {
+    width: 110%;
+}
+
+.submit input {
+    font-size: 20px;
+    color: white;
+    background-color: #3498db;
+    padding: 15px;
+    margin: 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.submit input:hover {
+    background-color: #2676ac;
+}
+
+.additional {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.additional label {
+    width: 20%;
+}
+
+.additional p {
+    text-align: left;
+    padding: 0px 10px;
+}
+
+.additional a {
+    text-decoration: none;
+    color: #ff4141;
+}
+
+
+/* switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #3498db;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #3498db;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* switch */

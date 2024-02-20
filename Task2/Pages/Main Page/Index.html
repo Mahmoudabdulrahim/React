@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | El-Prof</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="navbar">
+    <div class="logo">El-Prof</div>
+    <div class="search-bar">
+      <input type="search" id="search" placeholder="Search..." class="search-input">
+    </div>
+    <div class="mode-switcher">
+      <label class="switch">
+        <input type="checkbox" id="modeSwitch">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="Layout">
+
+
+  <section class="sec1">
+    <div class="Container-sec1">
+      <div class="logo-container">
+        <div class="sec1-logo"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Notifications</a></li>
+          <li><a href="">Messages</a></li>
+          <li><a href="">Collection</a></li>
+          <li><a href="">Subscription</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="../Login Page/Index.html">Login</a></li>
+          <li><a href="../Register Page/index.html">Register</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="button">
+      <button><a href="../Login Page/Index.html">Logout</a></button>
+    </div>
+  </section>
+
+
+  <section class="sec2">
+    <div class="post-creation">
+      <textarea id="postTextarea" placeholder="Post something"></textarea>
+      <button class="btn-publish">PUBLISH</button>
+    </div>
+
+
+    
+    <div class="post1">
+      <div class="post1-logo"></div>
+      <div class="post1-content">
+        <div class="post1-header">
+          <h4><strong>Mahmoud Abdelrahim</strong></h4>
+          <h6>@mahmoud_abdelrahim90</h6>
+        </div>
+        <p>I love you <3</p>
+        <div class="post1-footer">
+          <span class="icon">&#x2665;</span> 
+          <span class="icon">&#x1F4AC;</span>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="post1">
+      <div class="post1-logo"></div>
+      <div class="post1-content">
+        <div class="post1-header">
+          <h4><strong>Ammar Massoud</strong></h4>
+          <h6>@Just_Ammar21</h6>
+        </div>
+        <p>I like this guy!</p>
+        <img src="../../Used images/khaby.webp" alt="" width="fit-content" height="300px">
+        <div class="post1-footer">
+          <span class="icon">&#x2665;</span>
+          <span class="icon">&#x1F4AC;</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="sec3">
+    <aside class="sidebar-suggestions">
+      <!-- Suggestions area -->
+      <div class="suggestions">
+        <h3>Suggestions</h3>
+        <!-- Sample suggestion -->
+
+        <div class="suggestion">
+          <div class="suggestion-profile-pic"></div>
+          <div class="suggestion-content">
+            <strong>Ahmed</strong>
+            <p>test test test</p>
+          </div>
+        </div>
+
+        <div class="suggestion">
+          <div class="suggestion-profile-pic"></div>
+          <div class="suggestion-content">
+            <strong>Mohamed</strong>
+            <p>test test test</p>
+          </div>
+        </div>
+
+        <div class="suggestion">
+          <div class="suggestion-profile-pic"></div>
+          <div class="suggestion-content">
+            <strong>Mahmoud</strong>
+            <p>test test test</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+</div>
+
+<script>
+const modeSwitch = document.getElementById('modeSwitch');
+
+modeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+</script>
+
+</body>
+</html>
